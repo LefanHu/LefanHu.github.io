@@ -21,7 +21,7 @@ class Ball {
 
 function draw() {
   ctx.canvas.width = window.innerWidth;
-  ctx.canvas.height = window.innerHeight - 50;
+  ctx.canvas.height = window.innerHeight;
 
   for (var i = 0; i < balls.length; i++) {
     ball = balls[i];
