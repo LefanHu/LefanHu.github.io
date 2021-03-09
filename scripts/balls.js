@@ -1,9 +1,9 @@
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 
-let balls = [];
-
 const FRAMES_PER_SEC = 60;
+
+let balls = [];
 
 class Ball {
   constructor(radius) {
