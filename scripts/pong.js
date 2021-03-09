@@ -83,7 +83,7 @@ function update() {
   //round end
   if (ball.x < 0 || ball.x + radius * 2 > canvas.width) {
     //increment scores
-    ball.x < 0 ? leftPaddle.score++ : rightPaddle.score++;
+    ball.x < 0 ? rightPaddle.score++ : leftPaddle.score++;
 
     //disallow movement
     ball.dx = 0;
