@@ -18,7 +18,6 @@ class Ball {
     this.colour = "#" + Math.floor(Math.random() * 16777215).toString(16);
     this.dx = Math.ceil(Math.random() * 5) * (Math.random() < 0.5 ? -1 : 1);
     this.dy = Math.ceil(Math.random() * 5) * (Math.random() < 0.5 ? -1 : 1);
-    console.log(this.colour);
   }
 }
 
