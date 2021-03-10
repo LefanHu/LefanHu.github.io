@@ -65,8 +65,8 @@ function draw() {
 
   //draw crosshair
   ctx.beginPath();
-  ctx.arc(mouse.x, mouse.y, 5, 0, Math.PI * 2, false);
   ctx.fillStyle = "red";
+  ctx.arc(mouse.x, mouse.y, 5, 0, Math.PI * 2, false);
   ctx.fill();
   ctx.closePath();
 }
@@ -93,7 +93,7 @@ function game() {
 }
 
 function init() {
-  player = new Entity(canvas.width / 2, canvas.height / 2, 20, 0, 0, "green");
+  player = new Entity(canvas.width / 2, canvas.height / 2, 20, 0, 0, "white");
   setInterval(game, 1000 / FRAMES_PER_SEC);
 }
 
