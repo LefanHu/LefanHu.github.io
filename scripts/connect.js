@@ -25,7 +25,7 @@ class Particle {
     this.dx = Math.random() * 2 + 2 * (Math.random() < 0.5 ? -1 : 1);
     this.dy = Math.random() * 2 + 2 * (Math.random() < 0.5 ? -1 : 1);
     this.radius = 5;
-    this.color = "white";
+    this.color = "#" + Math.floor(Math.random() * 16777215).toString(16);
   }
 
   draw() {
@@ -76,15 +76,15 @@ function animate() {
   //clear previous frame
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
+  //connect dots together
+  connectDots();
+
   //update&draw all particle positions
   for (var i = 0; i < particles.length; i++) {
     particle = particles[i];
     particle.update();
     particle.draw();
   }
-
-  //connect dots together
-  connectDots();
 
   //draw the mouse as a red dot
   drawMouse();
@@ -103,19 +103,19 @@ function connectDots() {
         (oneX - twoX) * (oneX - twoX) + (oneY - twoY) * (oneY - twoY)
       );
       if (dist < CONNECT_DISTANCE) {
-        drawLine(oneX, oneY, twoX, twoY);
+        drawLine(oneX, oneY, twoX, twoY, particleOne.color);
         console.log("line drew");
       }
     }
   }
 }
 
-function drawLine(x1, y1, x2, y2) {
+function drawLine(x1, y1, x2, y2, color) {
   ctx.beginPath();
   ctx.moveTo(x1, y1);
   ctx.lineTo(x2, y2);
-  ctx.strokeStyle = "#FFFFFF";
-  ctx.lineWidth = 2;
+  ctx.strokeStyle = color;
+  ctx.lineWidth = 3;
   ctx.stroke();
 }
 
