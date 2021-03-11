@@ -8,7 +8,7 @@ const FRAMES_PER_SEC = 60;
 const NUM_DOTS = 150;
 const MAX_SPEED = 10;
 const BORDER = 20;
-const CONNECT_DISTANCE = 100;
+const CONNECT_DISTANCE = 120;
 
 var particles = [];
 
