@@ -6,7 +6,6 @@ canvas.height = innerHeight;
 
 const FRAMES_PER_SEC = 60;
 const NUM_DOTS = 150;
-const MAX_SPEED = 10;
 const BORDER = 20;
 const CONNECT_DISTANCE = 120;
 
@@ -36,12 +35,6 @@ class Particle {
   }
 
   update() {
-    //too fast
-    if (Math.sqrt(this.dx * this.dx + this.dy * this.dy) > MAX_SPEED) {
-      this.dx *= 0.95;
-      this.dy *= 0.95;
-    }
-
     //updates position
     this.x += this.dx;
     this.y += this.dy;
