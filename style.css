@@ -43,9 +43,11 @@
 }
 
 .card img {
-  /* rounding images */
+  /* card image options */
   border-radius: 5px 5px 0 0;
-  width: 100%;
+  width: 24.25vw;
+  height: 24.25vw;
+  object-fit: cover;
 }
 
 .card:hover {
