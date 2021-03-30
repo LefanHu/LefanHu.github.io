@@ -59,8 +59,6 @@ function game() {
 }
 
 function start() {
-  ctx.canvas.width = window.innerWidth;
-  ctx.canvas.height = window.innerHeight - 50;
   numBalls = 100;
   for (var i = 0; i < numBalls; i++) {
     radius = Math.floor(Math.random() * (40 - 5) + 5);

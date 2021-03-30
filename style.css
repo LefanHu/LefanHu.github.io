@@ -1,0 +1,65 @@
+/* nav bar */
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4caf50;
+}
+/* nav bar end */
+
+/* cards */
+.card {
+  /* adding shadows to cards */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 24.5%;
+  border-radius: 5px;
+  padding: 5px 0.5% 0 0;
+  float: left;
+  cursor: pointer;
+}
+
+.card img {
+  /* rounding images */
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+}
+
+.card:hover {
+  /* response on hover over card */
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card div.container {
+  /* padding inside card containers */
+  padding: 2px 16px;
+}
+/* cards end */
+
+body {
+  /* page background */
+  background-color: lightgray;
+}

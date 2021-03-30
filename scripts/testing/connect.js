@@ -97,7 +97,6 @@ function connectDots() {
       );
       if (dist < CONNECT_DISTANCE) {
         drawLine(oneX, oneY, twoX, twoY, particleOne.color);
-        console.log("line drew");
       }
     }
   }
