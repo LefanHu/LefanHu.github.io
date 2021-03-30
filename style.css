@@ -6,7 +6,6 @@
   overflow: hidden;
   background-color: #333;
   position: -webkit-sticky; /* Safari */
-  position: sticky;
 }
 
 .navbar li {
@@ -34,9 +33,10 @@
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  width: 19.5%;
+  width: 20%;
   border-radius: 5px;
-  padding: 5px 0.5% 0 0;
+  margin-top: 5px;
+  padding: 0;
   float: left;
   cursor: pointer;
 }
@@ -46,6 +46,19 @@
   width: 19.5vw;
   height: 19.5vw;
   object-fit: cover;
+}
+
+.card h4 {
+  font-size: xx-large;
+  font-family: sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+.card p {
+  text-align: center;
+  font-style: italic;
+  font-size: large;
 }
 
 .card:hover {
@@ -60,4 +73,9 @@
 body {
   /* page background */
   background-color: lightgray;
+}
+
+html {
+  padding: 0;
+  margin: 0;
 }
